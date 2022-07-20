@@ -3,6 +3,33 @@ import java.util.Scanner;
 public class Gugudan {
 	public static void main(String args[]) {
 		
+		
+		// 배열을 통한 구구단
+		System.out.println("몇단을 구구단할겨?");
+		Scanner scanner = new Scanner(System.in);
+		int number = scanner.nextInt();
+		
+		int[] result = new int[9];
+		for(int i=0; i < result.length; i++) {
+			result[i] = number * (i+1);
+			System.out.println(result[i]);
+		}
+			
+		// 이중 for문
+		int[] result2 = new int[8];
+		for(int i=0; i < result2.length; i++) {
+			System.out.println("=====" + (i+2) + "단" + "=====");
+			for(int j=0; j<result2.length; j++) {
+				result2[i] = (i+2) * (j+1);
+				System.out.println(result2[i]);
+			}
+		}
+		
+		
+		// method를 통한 구구단
+		
+		
+		
 //		  // 2단 
 //		 System.out.println("2단"); 
 //		 System.out.println(2*1);
@@ -73,20 +100,20 @@ public class Gugudan {
 //			System.out.println(7*j);
 //		}
 		
-		//8, 9단
-		System.out.println("구구단 단입력 플리즈 : ");
-		Scanner scanner = new Scanner(System.in);
-		int number = scanner.nextInt();
-		System.out.println("사용자가 입력한 값 : " + number);
-		
-		if(number <2) {
-			System.out.println("2보다 작은 값은 입력할 수 없습니다.");
-		} else if(number >9) {
-			System.out.println("9보다 큰 값은 입력할 수 없습니다.");
-		} else {
-			for(int i=1; i<10; i++) {
-				System.out.println(number * i);
-			}
-		}
+//		//8, 9단
+//		System.out.println("구구단 단입력 플리즈 : ");
+//		Scanner scanner = new Scanner(System.in);
+//		int number = scanner.nextInt();
+//		System.out.println("사용자가 입력한 값 : " + number);
+//		
+//		if(number <2) {
+//			System.out.println("2보다 작은 값은 입력할 수 없습니다.");
+//		} else if(number >9) {
+//			System.out.println("9보다 큰 값은 입력할 수 없습니다.");
+//		} else {
+//			for(int i=1; i<10; i++) {
+//				System.out.println(number * i);
+//			}
+//		}
 	}
 }
