@@ -13,20 +13,4 @@ public class GugudanMethod {
 		System.out.println(result[i]);
 		}
 	}
-	
-	public static void main(String args[]) {
-//		int[] result2 = calculate(2);
-//		print(result2);
-//		
-//		System.out.println("==================");
-//		
-//		int[] result4 = calculate(4);
-//		print(result4);
-		
-		for(int i=2; i<10; i++) {
-			int[] result = calculate(i);
-			print(result);
-			System.out.println("===========");
-		}
-	}
 }
